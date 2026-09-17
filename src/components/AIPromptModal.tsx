@@ -510,7 +510,7 @@ Ikuti spesifikasi teknis tingkat industri berikut secara ketat:
         </div>
 
         {/* Content Area */}
-        <div className="p-5 overflow-y-auto space-y-4 flex-1">
+        <div className="p-5 overflow-y-auto space-y-4 flex-1 custom-scrollbar">
           {activeTab === 'prompt-generator' && (
             <div className="space-y-4">
               {/* IMAGE UPLOAD / VISION SECTION */}
@@ -711,20 +711,8 @@ Ikuti spesifikasi teknis tingkat industri berikut secara ketat:
                   </div>
                 )}
 
-                {/* Footer spec bar */}
-                <div className="flex items-center justify-between pt-1 border-t border-neutral-800/80">
-                  <div className="text-[11px] text-neutral-400 font-mono flex items-center gap-2">
-                    <span className="px-2 py-0.5 rounded bg-neutral-900 border border-neutral-800">
-                      {resolution.label}
-                    </span>
-                    <span className="px-2 py-0.5 rounded bg-neutral-900 border border-neutral-800">
-                      {duration}s Loop
-                    </span>
-                    <span className="px-2 py-0.5 rounded bg-neutral-900 border border-neutral-800">
-                      {fps} FPS
-                    </span>
-                  </div>
-
+                {/* Footer action bar */}
+                <div className="flex items-center justify-end pt-1 border-t border-neutral-800/80">
                   <button
                     type="button"
                     onClick={handleEnhanceWithGemini}
@@ -799,7 +787,7 @@ Ikuti spesifikasi teknis tingkat industri berikut secara ketat:
                   </div>
                 </div>
 
-                <div className="p-4 bg-neutral-950 rounded-xl border border-neutral-800 font-mono text-xs text-neutral-300 leading-relaxed whitespace-pre-wrap max-h-56 overflow-y-auto select-text">
+                <div className="p-4 bg-neutral-950 rounded-xl border border-neutral-800 font-mono text-xs text-neutral-300 leading-relaxed whitespace-pre-wrap max-h-60 overflow-auto select-text prompt-scroll custom-scrollbar">
                   {activePromptText}
                 </div>
               </div>

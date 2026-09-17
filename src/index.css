@@ -21,3 +21,75 @@ html, body, #root {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+/* ============================================================
+   MODERN CUSTOM SCROLLBARS (Vertical & Horizontal)
+   ============================================================ */
+
+/* Global Custom Scrollbar for all scrollable areas */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(15, 17, 26, 0.6);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.28);
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  background-clip: padding-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(56, 189, 248, 0.65);
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* Firefox standard scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(148, 163, 184, 0.28) rgba(15, 17, 26, 0.6);
+}
+
+/* Specialized Prompt Box Scrollbar (Vertical & Horizontal) */
+.prompt-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(245, 158, 11, 0.45) rgba(10, 10, 14, 0.85);
+}
+
+.prompt-scroll::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+.prompt-scroll::-webkit-scrollbar-track {
+  background: rgba(12, 13, 20, 0.85);
+  border-radius: 9999px;
+  margin: 4px;
+}
+
+.prompt-scroll::-webkit-scrollbar-thumb {
+  background: rgba(245, 158, 11, 0.45);
+  border-radius: 9999px;
+  border: 1.5px solid transparent;
+  background-clip: padding-box;
+  box-shadow: inset 0 0 6px rgba(245, 158, 11, 0.3);
+  transition: background-color 0.2s ease;
+}
+
+.prompt-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(251, 191, 36, 0.85);
+  box-shadow: inset 0 0 8px rgba(251, 191, 36, 0.5), 0 0 6px rgba(245, 158, 11, 0.4);
+}
+
+.prompt-scroll::-webkit-scrollbar-corner {
+  background: transparent;
+}
+

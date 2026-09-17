@@ -56,17 +56,9 @@ export const Header: React.FC<HeaderProps> = ({
           <Code2 className="w-4 h-4" />
         </div>
         <div>
-          <div className="flex items-center gap-1.5 sm:gap-2">
-            <h1 className="text-xs sm:text-sm font-extrabold tracking-tight text-neutral-100 whitespace-nowrap">
-              HTML Motion Renderer
-            </h1>
-            <span className="hidden sm:inline-block text-[10px] font-mono uppercase px-1.5 py-0.5 rounded bg-amber-500/10 text-amber-400 border border-amber-500/20">
-              Microstock Edition
-            </span>
-          </div>
-          <p className="text-[11px] text-neutral-400 hidden xl:block">
-            Render Script HTML/CSS/JS AI Menjadi Video 4K & PNG Sequence
-          </p>
+          <h1 className="text-xs sm:text-sm font-black tracking-wider text-neutral-100 uppercase whitespace-nowrap">
+            TSUKASA MOTION ZX
+          </h1>
         </div>
       </div>
 

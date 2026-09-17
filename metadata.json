@@ -1,6 +1,6 @@
 {
-  "name": "HTML Motion Code Renderer",
-  "description": "Aplikasi render video motion grafis dari code script HTML/CSS/JS buatan AI atau pihak ketiga untuk kreator microstock. Ekspor ke video 4K/Full HD WebM dan ZIP PNG image sequence berlatar transparan atau solid.",
+  "name": "TSUKASA MOTION ZX",
+  "description": "Studio render video motion grafis dari code script HTML/CSS/JS buatan AI atau pihak ketiga. Ekspor ke video 4K/Full HD WebM dan ZIP PNG image sequence berlatar transparan atau solid.",
   "requestFramePermissions": [],
   "majorCapabilities": [
     "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
